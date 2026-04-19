@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshRolls: The Ultimate Kani Roll</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="href="favicon.png">
+
+<style>
+:root {
+  --primary-green: #2e7d32;
+  --dark-green: #1b5e20;
+  --accent-orange: #e65100;
+  --bg-light: #f4fff4;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: var(--bg-light);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER & HERO */
+.header {
+  background: var(--primary-green);
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+  /* Replace 'your-background-image.jpg' with your actual background file name */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header.png.jfif');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px; /* This makes the "long white" area taller */
+  text-align: center;
+  color: white; /* Changes text to white to stand out */
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero img {
+  width: 150px; /* Adjusts your logo size */
+  margin-bottom: 20px;
+  border-radius: 50%; /* Makes logo circular if you prefer */
+  border: 3px solid white;
+}
+
+/* SECTION STYLING */
+.section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: var(--primary-green);
+  border-bottom: 2px solid var(--bg-light);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Creates the layout where cards sit side-by-side */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Styles each flavor box */
+.product-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px; /* Slightly taller to show off the new photos */
+  object-fit: cover;
+  border-bottom: 2px solid #e8f5e9;
+}
+
+.product-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.price-tag {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #e65100; /* Exciting orange for the price */
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 35px;
+  background-color: #2e7d32; /* FreshRolls Green */
+  color: white !important; /* Forces text to stay white */
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid white; /* Makes it visible against dark backgrounds */
+}
+
+.btn:hover {
+  background-color: #e65100; /* Turns Orange when hovered */
+  transform: scale(1.1); /* Slightly grows in size */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <strong>FreshRolls</strong>
+</div>
+
+<div class="hero">
+  <img src="logo.png.jfif" alt="FreshRolls Logo">
+  <h1>FreshRolls: The Ultimate Kani Roll</h1>
+  <p>Siksik sa Sarap, Siksik sa Sustansya.</p>
+  
+  <a href="#menu" class="btn">ORDER NOW</a>
+</div>
+
+<div class="section" id="about">
+  <h2>About Us</h2>
+  <p>Located in <strong>Roxas Extension, Digos City</strong>, FreshRolls specializes in fresh, hand-rolled meals for students and professionals. [cite: 16, 45, 67]</p>
+  <div class="info-grid">
+    <div><strong>Affordable</strong></div>
+    <div><strong>Accessible</strong></div>
+    <div><strong>Enjoyable</strong></div>
+  </div>
+</div>
+
+<div class="section" id="menu">
+  <div class="section" id="menu">
+  <h2 style="text-align:center;">Our Fresh Rolls</h2>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="classic.png.jfif" alt="Classic Kani Roll">
+      <div class="product-info">
+        <h3>Classic Kani</h3>
+        <p>5 pieces of fresh, non-fried rolls with crisp vegetables[cite: 57].</p>
+        <div class="price-tag">₱50.00</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="spicy.png.jfif" alt="Spicy Kani Roll">
+      <div class="product-info">
+        <h3>Spicy Kani</h3>
+        <p>A zesty 5-piece version with a signature spicy kick[cite: 57].</p>
+        <div class="price-tag">₱60.00</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="creamycheese.png.jfif" alt="Creamy Cheese Kani">
+      <div class="product-info">
+        <h3>Creamy Cheese Kani</h3>
+        <p>Indulgent 5-piece pack paired with fresh ingredients[cite: 57].</p>
+        <div class="price-tag">₱65.00</div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<div class="product-card">
+  <img src="assorted.png.jfif" alt="Assorted Party Pack">
+  <div class="product-info">
+    <h3>Assorted Party Pack</h3>
+    <p>38 pieces: A mix of 14 Classic, 12 Spicy, and 12 Creamy Cheese rolls.</p>
+    <div class="price-tag">₱420.00 </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h2>Our Process</h2>
+  <ul style="list-style: none; padding: 0;">
+    <li>✅ Fresh vegetables from local suppliers [cite: 99, 100]</li>
+    <li>✅ Daily ingredient preparation [cite: 105, 123]</li>
+    <li>✅ Strict food safety & storage [cite: 120]</li>
+    <li>✅ Hand-rolled with quality care [cite: 124]</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Contact Us</h2>
+  <p>📧 freshrollsalad@gmail.com</p>
+  <p>📱 Facebook: @FreshRoll | TikTok: @freshroll</p>
+  <p>📍 Roxas Extension, Digos City [cite: 45]</p>
+</div>
+
+<div class="footer">
+  <p>FreshRolls – Fresh, Healthy, On-the-Go.</p>
+  <p>"Siksik sa Sarap, Siksik sa Sustansya." [cite: 35]</p>
+</div>
+
+</body>
+</html>
